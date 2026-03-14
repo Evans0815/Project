@@ -18,6 +18,8 @@
         <spring.boot.version>2.7.18</spring.boot.version>
         <!--    工具类相关    -->
         <lombok.version>1.18.20</lombok.version>
+        <guava.version>33.5.0-jre</guava.version>
+        <hutool-5.version>5.8.42</hutool-5.version>
     </properties>
 
     <dependencyManagement>
@@ -39,6 +41,14 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- Spring 核心 -->
+            <dependency>
+                <!-- 用于生成自定义的 Spring @ConfigurationProperties 配置类的说明文件 -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
             <!-- 工具类相关 -->
             <dependency>
                 <groupId>com.evans</groupId>
@@ -50,6 +60,18 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-5.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
