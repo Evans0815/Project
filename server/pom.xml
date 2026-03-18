@@ -11,12 +11,13 @@
     </parent>
 
     <artifactId>server</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.evans</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>quartz</artifactId>
+            <version>${revision}</version>
         </dependency>
 
         <!-- spring boot 配置所需依赖 -->
@@ -27,8 +28,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
         </dependency>
     </dependencies>
 

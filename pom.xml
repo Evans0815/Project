@@ -13,6 +13,8 @@
         <module>dependencies</module>
         <module>common</module>
         <module>server</module>
+        <module>quartz</module>
+        <module>database</module>
     </modules>
 
     <properties>

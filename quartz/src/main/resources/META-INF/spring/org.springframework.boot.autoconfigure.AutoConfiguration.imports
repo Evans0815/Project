@@ -1,0 +1,2 @@
+com.evans.project.quartz.config.QuartzAutoConfiguration
+com.evans.project.quartz.config.QuartzAsyncAutoConfiguration
